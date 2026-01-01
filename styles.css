@@ -1,0 +1,134 @@
+/* ================= MODAL OVERLAY ================= */
+.cgpt-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  animation: fadeIn 0.15s ease-out;
+}
+
+/* ================= MODAL CONTENT ================= */
+.cgpt-modal-content {
+  background: #ffffff;
+  width: 800px;
+  max-width: 90%;
+  height: 80vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+/* Dark Mode Support */
+.dark .cgpt-modal-content {
+  background: #202123;
+  border-color: #444654;
+  color: #ececf1;
+}
+
+/* ================= HEADER ================= */
+.cgpt-modal-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+}
+
+.dark .cgpt-modal-header {
+  background: #343541;
+  border-color: #444654;
+}
+
+/* ================= ACTIONS & BUTTONS ================= */
+.cgpt-modal-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cgpt-btn-primary {
+  background: #10a37f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cgpt-btn-primary:hover {
+  background: #0e906f;
+}
+
+.cgpt-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.dark .cgpt-close-btn {
+  color: #aaa;
+}
+
+.cgpt-close-btn:hover {
+  color: #000;
+}
+
+.dark .cgpt-close-btn:hover {
+  color: #fff;
+}
+
+/* ================= EDITOR BODY ================= */
+.cgpt-modal-editor {
+  flex-grow: 1;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  background: transparent;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+/* ================= PILL UI ================= */
+.cgpt-snippet-pill {
+  position: relative;
+  cursor: zoom-in !important;
+  border: 1px dashed #10a37f !important;
+}
+
+.cgpt-snippet-pill:hover {
+  border-style: solid !important;
+  background-color: rgba(16, 163, 127, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
