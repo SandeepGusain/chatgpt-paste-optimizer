@@ -3,15 +3,12 @@
 > **Manage large text pastes in ChatGPT like a pro.**  
 > Automatically converts large code/text blocks into editable file attachments, keeping your chat clean.
 
-![Demo](https://via.placeholder.com/800x400?text=Add+Screenshots+Here) *(Replace this with a real screenshot link later)*
-
-## 🚀 Why use this?
+## Features
 *   **Clean UI:** Pasting 500 lines of code no longer explodes your input box.
 *   **Editable Preview:** Fix typos in your code snippet *before* sending it to the AI.
 *   **Safe:** Runs 100% locally. No data leaves your browser.
-*   **Open Source:** Verify the code yourself.
 
-## 📥 How to Install (Chrome / Edge / Brave)
+## How to Install (Chrome / Edge / Brave)
 
 Since this is an open-source tool, you install it manually:
 
@@ -25,7 +22,7 @@ Since this is an open-source tool, you install it manually:
 
 That's it! The extension is now active on chatgpt.com.
 
-## ⚙️ Configuration
+## Configuration
 Click the extension icon in your browser toolbar to:
 *   Set your character threshold (Default: 2000).
 *   Change the filename prefix (e.g., `ProjectA_`).
