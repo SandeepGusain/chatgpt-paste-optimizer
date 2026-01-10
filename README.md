@@ -1,4 +1,4 @@
-# ChatGPT Paste Optimizer ✂️
+# ChatGPT Paste Optimizer
 
 > **Manage large text pastes in ChatGPT like a pro.**  
 > Automatically converts large code/text blocks into editable file attachments, keeping your chat clean.
